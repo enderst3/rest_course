@@ -40,3 +40,10 @@ def bye():
 
 if __name__=="__main__":
     app.run()
+
+'''
+All data sent across the internet is text.
+TEXT TCP
+
+json is a format for a data interchange between browsers and servers.
+'''
