@@ -6,7 +6,7 @@ export FLASK_APP=app.py
 flask run
 """
 
-# import libraries
+# import libraries jsonify displays json
 from flask import Flask, jsonify
 # start flask application
 app = Flask(__name__)
