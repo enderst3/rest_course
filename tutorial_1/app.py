@@ -29,11 +29,22 @@ def hi_there():
 # create a response for the request that came to '/bye'.
 def bye():
     # can also return python 
+    age = 2*15
     retJson = {
-        'field1' : 'abc',
-        'field2' : 'def'
+        'Name': 'Todd',
+        'Age': age,
+        'phones':[
+            {
+                'phone_name': "iphone8",
+                'phone_number': 12345
+            },
+            {
+                'phone_name': "iphone6",
+                'phone_number': 54321
+            }
+        ]
     }
-    return jsonify(retJson)
+    return jsonify(retJson), 404
 
     
 
