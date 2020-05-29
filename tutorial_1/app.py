@@ -7,7 +7,7 @@ flask run
 """
 
 # import libraries jsonify displays json
-from flask import Flask, jsonify
+from flask import Flask, jsonify, request
 # start flask application
 app = Flask(__name__)
 
@@ -24,6 +24,18 @@ def hello_world():
 def hi_there():
     return "I just hit /hithere"
 
+# create route to accept post request
+@app.route('/add_two_nums', methods=["POST"])
+def add_two_nums():
+    #get x,y from posted data
+    dataDict = request.get_json()
+    return jsonify(dataDict)
+    
+    #Add z=x+y
+
+    #Prepare a JSON, 'z':z
+
+    #return jsonify(map_prepared)
 # create route for '/bye'
 @app.route('/bye')
 # create a response for the request that came to '/bye'.
