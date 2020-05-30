@@ -29,13 +29,16 @@ def hi_there():
 def add_two_nums():
     #get x,y from posted data
     dataDict = request.get_json()
-    return jsonify(dataDict)
-    
+    x = dataDict['x']
+    y = dataDict['y']
     #Add z=x+y
-
+    z = x+y
     #Prepare a JSON, 'z':z
-
+    retJSON = {
+        'z': z
+    }
     #return jsonify(map_prepared)
+    return jsonify(retJSON), 200
 # create route for '/bye'
 @app.route('/bye')
 # create a response for the request that came to '/bye'.
