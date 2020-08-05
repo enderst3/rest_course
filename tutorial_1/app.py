@@ -1,5 +1,7 @@
 """
-Simple flask hello world app. From udemy course. 
+Restful api is an api architecture, that uses http.
+
+Simple flask hello world app. From udemy course.
 
 To run put this in terminal:
 export FLASK_APP=app.py
